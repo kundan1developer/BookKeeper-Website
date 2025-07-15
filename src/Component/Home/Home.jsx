@@ -49,7 +49,7 @@ const Home = () => {
     setIndex(index === testimonials.length - 1 ? 0 : index + 1);
 
   return (
-    <div className="landing-page">
+    <div className="container-fluid ">
       {/* Hero Section */}
       <section
         style={{
@@ -549,35 +549,7 @@ const Home = () => {
         </Container>
       </section>
 
-      {/* Final CTA */}
-      <section className="cta-section py-5 bg-light">
-        <Container className="text-center">
-          <h2 className="fw-bold">Ready to Simplify Your Accounting?</h2>
-          <p className="text-muted mb-4">
-            Join thousands of businesses that trust Bookkeeper for their GST
-            accounting needs.
-          </p>
-          <div className="d-flex justify-content-center gap-3 mb-4">
-            <Button variant="warning" className="text-white">
-              Start Your Free Trial
-            </Button>
-            <Button variant="outline-dark">Schedule Demo</Button>
-          </div>
-          <Row>
-            {[
-              "1 Signup Step",
-              "User-Friendly",
-              "Start GST Filing Instantly",
-            ].map((text, idx) => (
-              <Col md={4} key={idx}>
-                <Card className="shadow-sm h-100">
-                  <Card.Body className="text-muted">{text}</Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </section>
+    
 
 
     </div>

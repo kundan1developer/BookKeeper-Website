@@ -1,5 +1,6 @@
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import logoziratech from '../assets/logoziratech.png'
 
 export default function Footer() {
   return (
@@ -14,9 +15,15 @@ export default function Footer() {
       <Container>
         <Row className="mb-4">
           <Col md={3}>
-            <h5 style={{ color: "#f4a033" }}>
-              <span style={{ fontSize: "24px", marginRight: "5px" }}>📖</span>BookKeeper
-            </h5>
+            <h5 style={{ color: "#f4a033" }} className="d-flex align-items-center">
+  <img
+    src={logoziratech}
+    alt="BookKeeper Logo"
+    style={{ width: "120px", height: "40px", marginRight: "8px" }} 
+  />
+
+</h5>
+
             <p style={{ fontSize: "13px", color: "#ccc" }}>
               Simplifying GST accounting for businesses since 2020
             </p>
