@@ -21,7 +21,7 @@ const Aboutus = () => {
     <div className="min-vh-100 bg-white d-flex flex-column">
       {/* About Us Hero Section */}
       <section className="py-5 overflow-hidden">
-        <div className="container py-4 px-3 px-md-4 px-lg-5">
+        <div className="p-5">
           <div className="row align-items-center g-4">
             {/* Left Column - Text Content */}
             <div className="col-lg-6 mb-4 mb-lg-0">
@@ -99,7 +99,7 @@ const Aboutus = () => {
 
       {/* Our Team Section */}
       <section className="py-5 bg-light">
-        <div className="container py-4 px-3 px-md-4 px-lg-5">
+        <div className="p-5">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-3" style={{ color: '#2D1810' }}>Our Leadership Team</h2>
             <div className="w-25 mx-auto mb-4" style={{ height: '2px', backgroundColor: '#854836' }}></div>
@@ -195,7 +195,7 @@ const Aboutus = () => {
 
       {/* Our Story Section */}
       <section className="py-5">
-        <div className="container py-4 px-3 px-md-4 px-lg-5">
+        <div className="p-5">
           <div className="row align-items-center g-4">
             <div className="col-lg-6">
               <img
@@ -237,7 +237,7 @@ const Aboutus = () => {
 
       {/* Values Section */}
       <section className="py-5 text-white" style={{ backgroundColor: '#2D1810' }}>
-        <div className="container py-4 px-3 px-md-4 px-lg-5">
+        <div className="p-5">
           <div className="text-center mb-5">
             <h2 className="display-4 fw-bold mb-3">Our Core Values</h2>
             <div className="w-25 bg-white mx-auto mb-4" style={{ height: '2px' }}></div>

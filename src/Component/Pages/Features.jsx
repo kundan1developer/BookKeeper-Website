@@ -5,7 +5,7 @@ const Features = () => {
     <div>
       {/* Hero Section */}
  <section
-  className="py-5"
+  className="p-5"
   style={{
     background: "linear-gradient(90deg, #7B3F22 0%, #6A3320 100%)",
     color: "#ffffff",
@@ -71,10 +71,10 @@ const Features = () => {
 
       {/* Features Section */}
 <section
-  className="py-5"
+  className="p-5"
   style={{ backgroundColor: "#FAEEDF" }}
 >
-  <div className="container text-center">
+  <div className=" text-center">
     {/* Section Title */}
     <h2
       className="h1 font-weight-bold mb-2"
@@ -224,8 +224,8 @@ const Features = () => {
 
 
       {/* Testimonials Section */}
- <section className="py-5" style={{ backgroundColor: "#FBF7F4" }}>
-  <div className="container text-center">
+ <section className="p-5" style={{ backgroundColor: "#FBF7F4" }}>
+  <div className=" text-center">
     <h2 className="h1 font-weight-bold mb-1" style={{ color: "#2D1810" }}>
       What Our Customers Say
     </h2>

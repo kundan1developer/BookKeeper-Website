@@ -12,7 +12,7 @@ export default function Footer() {
         paddingBottom: "20px",
       }}
     >
-      <Container>
+      <div className="p-5">
         <Row className="mb-4">
           <Col md={3}>
             <h5 style={{ color: "#f4a033" }} className="d-flex align-items-center">
@@ -121,7 +121,7 @@ export default function Footer() {
             Terms of Service &nbsp; | &nbsp; Privacy Policy &nbsp; | &nbsp; Cookies
           </Col>
         </Row>
-      </Container>
+      </div>
     </footer>
   );
 }
