@@ -33,9 +33,9 @@ const Navbar = () => {
             <Nav.Link href="/aboutus" className="text-white">About Us</Nav.Link>
             <Nav.Link href="/contact" className="text-white">Contact</Nav.Link>
             <Nav.Link href="/howitworks" className="text-white">How It Work</Nav.Link>
-            <Nav.Link href="#" className="text-white d-flex align-items-center gap-1">
+            {/* <Nav.Link href="#" className="text-white d-flex align-items-center gap-1">
               <FaGlobe /> العربية
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
 
           {/* Login & Signup buttons */}
