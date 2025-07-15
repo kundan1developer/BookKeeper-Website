@@ -79,8 +79,8 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="min-vh-100 py-5 px-3" style={{ backgroundColor: '#FBF7F4' }}>
-      <div className="container">
+    <div className="min-vh-100  px-3" style={{ backgroundColor: '#FBF7F4' }}>
+      <div className="p-5">
         {/* Header */}
         <div className="text-center mb-5">
           <h1 className="display-4 font-weight-bold mb-3" style={{ color: '#2D1810' }}>
@@ -186,7 +186,7 @@ const Pricing = () => {
         </div>
 
         {/* FAQ */}
-        <div className="mx-auto text-center mt-5" style={{ maxWidth: '800px' }}>
+        <div className="mx-auto  mt-5" >
           <h2 className="h1 font-weight-bold mb-4" style={{ color: '#2D1810' }}>Frequently Asked Questions</h2>
           <div className="text-left">
             {[
