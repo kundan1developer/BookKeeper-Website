@@ -23,6 +23,7 @@ const Navbar = () => {
             <Nav.Link href="#" className="text-white">Pricing</Nav.Link>
             <Nav.Link href="#" className="text-white">About Us</Nav.Link>
             <Nav.Link href="#" className="text-white">Contact</Nav.Link>
+             <Nav.Link href="#" className="text-white">How It Work</Nav.Link>
             <Nav.Link href="#" className="text-white d-flex align-items-center gap-1">
               <FaGlobe /> العربية
             </Nav.Link>

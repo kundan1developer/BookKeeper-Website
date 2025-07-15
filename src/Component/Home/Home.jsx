@@ -17,6 +17,7 @@ import {
   FaArrowLeft,
 } from "react-icons/fa";
 
+
 const Home = () => {
   const testimonials = [
     {
@@ -580,6 +581,7 @@ const Home = () => {
 
 
     </div>
+  
   );
 };
 
