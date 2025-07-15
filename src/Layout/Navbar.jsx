@@ -11,15 +11,15 @@ const Navbar = () => {
       <Container>
         {/* Logo */}
         <BootstrapNavbar.Brand href="#" className="d-flex align-items-center text-white fw-semibold fs-5">
-  {/* Logo Image */}
-  <img
-    src={logoziratech} 
-    alt="BookKeeper Logo"
-    style={{ width: '120px', height: '40px' }} 
-    className="me-2"
-  />
-  
-</BootstrapNavbar.Brand>
+          {/* Logo Image */}
+          <img
+            src={logoziratech}
+            alt="BookKeeper Logo"
+            style={{ width: '120px', height: '40px' }}
+            className="me-2"
+          />
+
+        </BootstrapNavbar.Brand>
 
 
         <BootstrapNavbar.Toggle aria-controls="navbar-nav" />
@@ -41,7 +41,7 @@ const Navbar = () => {
           {/* Login & Signup buttons */}
           <div className="d-flex align-items-center ms-3 gap-2">
             <Button variant="outline-light" size="sm">Login</Button>
-            <Button variant="warning" size="sm" className="text-white">Sign Up</Button>
+            <Button variant="warning" size="sm" className="text-white" style={{backgroundColor: "#f4a033"}}>Sign Up</Button>
           </div>
         </BootstrapNavbar.Collapse>
       </Container>

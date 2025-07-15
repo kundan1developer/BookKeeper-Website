@@ -2,6 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import {
   FaCheckCircle,
   FaMobileAlt,
@@ -49,16 +50,15 @@ const Home = () => {
     setIndex(index === testimonials.length - 1 ? 0 : index + 1);
 
   return (
-    <div className="container-fluid ">
+    <div className="">
       {/* Hero Section */}
       <section
         style={{
           background: "linear-gradient(135deg, #fff5ec, #fae2cf)",
           color: "#381c00",
-          padding: "100px 0",
         }}
       >
-        <Container>
+        <div className="p-5">
           <Row className="align-items-center">
             {/* Left Content */}
             <Col md={6} className="mb-4">
@@ -198,15 +198,15 @@ const Home = () => {
               </div>
             </Col>
           </Row>
-        </Container>
+        </div>
       </section>
 
       {/* GST Accounting Features Section */}
       <section
-        className="features-section py-5"
+        className="features-section"
         style={{ backgroundColor: "#fff8ef" }}
       >
-        <Container>
+        <div className="p-5">
           <div className="text-center mb-4">
             <span
               className="badge mb-2"
@@ -334,7 +334,7 @@ const Home = () => {
             ))}
           </Row>
 
-          <div className="text-center mt-4">
+          {/* <div className="text-center mt-4">
             <Button
               variant="light"
               style={{
@@ -348,16 +348,16 @@ const Home = () => {
             >
               View all features <FaChevronDown size="12" />
             </Button>
-          </div>
-        </Container>
+          </div> */}
+        </div>
       </section>
 
       {/* Powerful Features Section */}
       <section
-        className="powerful-features py-5"
+        className="powerful-features"
         style={{ backgroundColor: "#f5eeea" }}
       >
-        <Container>
+        <div className="p-5">
           <div className="text-center mb-4">
             <span
               className="badge mb-2"
@@ -442,7 +442,8 @@ const Home = () => {
           </Row>
 
           <div className="text-center mt-4">
-            <Button
+           <Link to="/features">
+           <Button
               style={{
                 backgroundColor: "#6b3c1d",
                 border: "none",
@@ -454,13 +455,15 @@ const Home = () => {
             >
               Explore All Features <FaArrowRight size="12" className="ms-1" />
             </Button>
+           </Link>
+            
           </div>
-        </Container>
+        </div>
       </section>
 
       {/* Testimonial & Metrics */}
-      <section className="testimonial-metrics py-5">
-        <Container>
+      <section className="testimonial-metrics">
+        <div className="p-5">
           <Row className="justify-content-center">
             <Col md={8} className="mb-4">
               <div
@@ -546,7 +549,7 @@ const Home = () => {
               </Col>
             ))}
           </Row>
-        </Container>
+        </div>
       </section>
 
     
