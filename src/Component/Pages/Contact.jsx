@@ -98,7 +98,7 @@ const Contact = () => {
       <header className="py-5 text-white" style={{ 
         background: 'linear-gradient(to right, #854836, #5C3D2E)'
       }}>
-        <div className="container px-3 px-md-4 px-lg-5">
+        <div className="p-5">
           <h1 className={`display-4 font-weight-bold mb-3 ${isVisible ? 'slide-in' : ''}`} 
               style={{ opacity: 0, animationDelay: '0.2s' }}>
             Contact Us
@@ -115,7 +115,7 @@ const Contact = () => {
       </header>
 
       {/* Main Content */}
-      <main className="container flex-grow-1 px-3 px-md-4 px-lg-5 py-5">
+      <div className="p-5">
         <div className="row g-4">
           {/* Contact Form */}
           <div className="col-lg-6">
@@ -301,7 +301,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </main>
+      </div>
 
       {/* Floating WhatsApp Button */}
       <div className="position-fixed" style={{ bottom: '1.5rem', right: '1.5rem', zIndex: 50 }}>

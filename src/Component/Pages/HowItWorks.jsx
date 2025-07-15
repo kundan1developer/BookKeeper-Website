@@ -11,7 +11,7 @@ import {
 const HowItWorks = () => {
   return (
     <div className="min-vh-100  bg-white py-5 px-4" style={{ minHeight: '1024px' }}>
-      <div className="container">
+      <div className="p-5">
         {/* Header Section */}
         <div className="text-center mb-5">
           <h1 className="display-4 font-weight-bold mb-4" style={{ color: '#2D1810' }}>How It Works</h1>
@@ -21,7 +21,7 @@ const HowItWorks = () => {
         </div>
 
         {/* Process Steps */}
-       <div className="container py-5">
+       <div className="p-5">
   <div className="row gy-5 justify-content-center">
     {/* Step 1 */}
     <div className="col-12 col-md-4 d-flex">
@@ -173,7 +173,7 @@ const HowItWorks = () => {
 </div>
 
 
-        <div className="container py-5">
+        <div className="p-5">
   <h2 className="text-center mb-5 fw-bold" style={{ color: '#2D1810', fontSize: '2.5rem' }}>
     Detailed Features
   </h2>
