@@ -38,11 +38,31 @@ const Navbar = () => {
             </Nav.Link> */}
           </Nav>
 
-          {/* Login & Signup buttons */}
-          <div className="d-flex align-items-center ms-3 gap-2">
-            <Button variant="outline-light" size="sm">Login</Button>
-            <Button variant="warning" size="sm" className="text-white" style={{backgroundColor: "#f4a033"}}>Sign Up</Button>
-          </div>
+        {/* Auth Buttons */}
+<div className="d-flex flex-column flex-lg-row align-items-center justify-content-center justify-content-lg-end mt-3 mt-lg-0 gap-2">
+  <Button 
+    variant="outline-light" 
+    size="sm" 
+    className="w-100 w-lg-auto"
+    style={{ whiteSpace: "nowrap" }}
+  >
+    Login
+  </Button>
+  <Button
+    variant="warning"
+    size="sm"
+    className="text-white w-100 w-lg-auto"
+    style={{ 
+      backgroundColor: "#f4a033", 
+      border: "none",
+      whiteSpace: "nowrap" // 👈 ye line fix karegi!
+    }}
+  >
+    Sign Up
+  </Button>
+</div>
+
+
         </BootstrapNavbar.Collapse>
       </Container>
     </BootstrapNavbar>
