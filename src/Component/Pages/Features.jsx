@@ -8,7 +8,6 @@ const Features = () => {
         style={{
           background: "linear-gradient(90deg, #7B3F22 0%, #6A3320 100%)",
           color: "#ffffff",
-          minHeight: "90vh",
         }}
       >
         <div className="container-fluid p-5">
