@@ -8,7 +8,7 @@ import logoziratech from '../assets/logoziratech.png'
 const Navbar = () => {
   return (
     <BootstrapNavbar expand="lg" className="custom-navbar py-3" variant="dark" sticky="top">
-      <Container>
+      <Container fluid>
         {/* Logo */}
         <BootstrapNavbar.Brand href="#" className="d-flex align-items-center text-white fw-semibold fs-5">
           {/* Logo Image */}
