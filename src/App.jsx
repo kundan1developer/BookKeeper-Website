@@ -9,6 +9,7 @@ import Pricing from './Component/Pages/Pricing'
 import Contact from './Component/Pages/Contact'
 import Features from './Component/Pages/Features'
 import Aboutus from './Component/Pages/Aboutus'
+import ScrollToTop from './Layout/ScrollToTop'
 
 
 
@@ -23,16 +24,18 @@ export default function App() {
 
   return (
     <>
+ <ScrollToTop /> {/* 🚀 Add this to auto scroll to top on route change */}
       {!hideHeaderFooter && <Navbar />}
+
       <Routes>
-        <Route path="/" element={<Home />} /> 
+        <Route path="/" element={<Home />} />
         <Route path="/features" element={<Features />} />
         <Route path="/howitworks" element={<HowItWorks />} />
         <Route path="/pricing" element={<Pricing />} />
-         <Route path="/contact" element={<Contact />} />
-         <Route path="/aboutus" element={<Aboutus />} />
-        
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/aboutus" element={<Aboutus />} />
       </Routes>
+
       {!hideHeaderFooter && <Footer />}
     </>
   )

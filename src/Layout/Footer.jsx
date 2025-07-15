@@ -1,6 +1,7 @@
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import logoziratech from '../assets/logoziratech.png'
+import logoziratech from "../assets/logoziratech.png";
 
 export default function Footer() {
   return (
@@ -16,14 +17,12 @@ export default function Footer() {
         <Row className="mb-4">
           <Col md={3}>
             <h5 style={{ color: "#f4a033" }} className="d-flex align-items-center">
-  <img
-    src={logoziratech}
-    alt="BookKeeper Logo"
-    style={{ width: "120px", height: "40px", marginRight: "8px" }} 
-  />
-
-</h5>
-
+              <img
+                src={logoziratech}
+                alt="BookKeeper Logo"
+                style={{ width: "120px", height: "40px", marginRight: "8px" }}
+              />
+            </h5>
             <p style={{ fontSize: "13px", color: "#ccc" }}>
               Simplifying GST accounting for businesses since 2020
             </p>
@@ -34,31 +33,34 @@ export default function Footer() {
               <FaInstagram style={{ color: "#ccc", cursor: "pointer" }} />
             </div>
           </Col>
+
           <Col md={3}>
             <h6 style={{ fontWeight: "bold", marginBottom: "15px" }}>Product</h6>
             <ul className="list-unstyled" style={{ fontSize: "13px" }}>
-              <li>➤ Features</li>
-              <li>➤ Pricing</li>
-              <li>➤ Integrations</li>
-              <li>➤ Updates</li>
+              <li><Link to="/features" className="text-decoration-none text-light">➤ Features</Link></li>
+              <li><Link to="/pricing" className="text-decoration-none text-light">➤ Pricing</Link></li>
+              <li><a href="#" className="text-decoration-none text-light">➤ Integrations</a></li>
+              <li><a href="#" className="text-decoration-none text-light">➤ Updates</a></li>
             </ul>
           </Col>
+
           <Col md={3}>
             <h6 style={{ fontWeight: "bold", marginBottom: "15px" }}>Resources</h6>
             <ul className="list-unstyled" style={{ fontSize: "13px" }}>
-              <li>➤ Documentation</li>
-              <li>➤ Tutorials</li>
-              <li>➤ Blog</li>
-              <li>➤ Support</li>
+              <li><a href="#" className="text-decoration-none text-light">➤ Documentation</a></li>
+              <li><a href="#" className="text-decoration-none text-light">➤ Tutorials</a></li>
+              <li><a href="#" className="text-decoration-none text-light">➤ Blog</a></li>
+              <li><a href="#" className="text-decoration-none text-light">➤ Support</a></li>
             </ul>
           </Col>
+
           <Col md={3}>
             <h6 style={{ fontWeight: "bold", marginBottom: "15px" }}>Company</h6>
             <ul className="list-unstyled" style={{ fontSize: "13px" }}>
-              <li>➤ About Us</li>
-              <li>➤ Careers</li>
-              <li>➤ Contact</li>
-              <li>➤ Privacy Policy</li>
+              <li><Link to="/aboutus" className="text-decoration-none text-light">➤ About Us</Link></li>
+              <li><a href="#" className="text-decoration-none text-light">➤ Careers</a></li>
+              <li><Link to="/contact" className="text-decoration-none text-light">➤ Contact</Link></li>
+              <li><a href="#" className="text-decoration-none text-light">➤ Privacy Policy</a></li>
             </ul>
           </Col>
         </Row>
@@ -67,7 +69,9 @@ export default function Footer() {
 
         <Row className="mb-3">
           <Col md={6}>
-            <h6 style={{ fontWeight: "bold", fontSize: "13px" }}>Subscribe to our newsletter</h6>
+            <h6 style={{ fontWeight: "bold", fontSize: "13px" }}>
+              Subscribe to our newsletter
+            </h6>
             <div className="d-flex mt-2">
               <Form.Control
                 type="email"
